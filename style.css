@@ -1,0 +1,214 @@
+/* body{
+  -webkit-font-smoothing: antialiased;
+} */
+
+/*****Left side of the page*****/
+.left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 460px;
+  height: 635px;
+  background-image: url("pics/mike-davidson.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+#mike-davidson, #molly-nix, #andy-law{
+  position: absolute;
+  bottom: 0;
+  padding: 0 40px;
+}
+
+.left a{
+  position: absolute;
+  background-image: url('pics/invision-logo-white.png');
+  background-size: 100%;
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  top: 38px;
+  left: 38px;
+}
+
+.left p{
+  position: relative;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: white;
+  opacity: 0.8;
+  line-height: 26px;
+  font-size: 16px;
+  font-family: "Open Sans",open-sans,sans-serif;
+}
+
+.left span{
+  opacity: 0.8;
+  font-weight: 600;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Open Sans",open-sans,sans-serif;
+}
+
+#twitter-logo{
+  height: 32px;
+  width: 39px;
+  margin-bottom: 40px;
+  display: block
+}
+
+#uber-logo{
+  width: 119px;
+  height: 24px;
+  margin-bottom: 35px;
+}
+
+#netflix{
+  width: 110px;
+  height: 31px;
+  margin-bottom: 35px;
+}
+
+.left::before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 480px;
+  width: 100%;
+  background-image: linear-gradient(to top,#141516 7%,rgba(43,51,65,0) 100%);
+}
+
+
+#molly-nix, #andy-law{
+  display: none;
+}
+
+ul{
+  list-style-type: disc;
+  display: block;
+  position: absolute;
+  width: 50%;
+  right: 40px;
+  bottom: 40px;
+  text-align: right;
+  margin: 0;
+}
+
+li{
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: rgb(140,140,141);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 20px;
+  transition: background-color .2s ease;
+}
+
+/*****Right side of the page*****/
+.right{
+  float: right;
+  width: calc(100% - 460px);
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.side{
+  display: block;
+}
+header{
+  display: block;
+  position: absolute;
+  margin-top:38px;
+  margin-bottom: 46px;
+  margin-right: 38px;
+  right: 0;
+  top: 0;
+
+  color: #596377;
+  line-height: 36px;
+}
+
+header span{
+  font-size: 13px;
+  font-family: "Open Sans",open-sans,sans-serif;
+  opacity: 0.9;
+}
+
+header a{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 0px 28px;
+  border: 1px solid rgb(198,204,215);
+  border-radius: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Open Sans",open-sans,sans-serif;
+  color: black;
+  height: 34px;
+  opacity: 0.8;
+  margin-left: 12px;
+}
+
+.form-content{
+  clear:both;
+  display: block;
+  max-width: 540px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+form{
+  display: block;
+  /* margin-top: 100px; */
+  font-family: "Open Sans",open-sans,sans-serif;
+}
+
+form h1{
+  font-size:28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+form span{
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+
+form label{
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+input{
+  font-size: 14px;
+  height: 50px;
+  padding: 0 15px;
+  width: 540px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(212,217,226);
+}
+
+li:hover{
+  background-color: white;
+}
+
+header a:hover{
+  background-color: rgb(255,110,147);
+  color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
