@@ -2,6 +2,10 @@
   -webkit-font-smoothing: antialiased;
 } */
 
+.side{
+  display: block;
+}
+
 /*****Left side of the page*****/
 .left{
   position: fixed;
@@ -119,9 +123,7 @@ li{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.side{
-  display: block;
-}
+
 header{
   display: block;
   position: absolute;
@@ -176,6 +178,9 @@ form h1{
   font-size:28px;
   font-weight: 400;
   margin-bottom: 30px;
+  opacity: 0.7;
+  height: 70px;
+  margin-bottom: 50px;
 }
 
 form span{
@@ -185,12 +190,14 @@ form span{
 }
 
 form label{
+  font-family: brandon-grotesque,"Open Sans",open-sans,sans-serif;
   display: block;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 8px;
   text-transform: uppercase;
+  color: #434C5E;
 }
 
 input{
@@ -201,6 +208,40 @@ input{
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid rgb(212,217,226);
+  color: #596377;
+  cursor: text;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+#continue{
+  display: block;
+  background-color: rgb(255,51,102);
+  color: white;
+  width: 191px;
+  border-radius: 100px;
+  height: 50px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-family: brandon-grotesque,"Open Sans",open-sans,sans-serif;
+}
+
+form p{
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: text;
+}
+
+form p a{
+  color: black;
 }
 
 li:hover{
@@ -211,4 +252,8 @@ header a:hover{
   background-color: rgb(255,110,147);
   color: white;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#continue:hover{
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
